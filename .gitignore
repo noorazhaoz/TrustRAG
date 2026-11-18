@@ -1,0 +1,31 @@
+# Python and IDE
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+venv_py39_backup/
+env/
+.idea/
+.vscode/
+.DS_Store
+# Local models and runtime indexes
+data/document_store/
+*.npz
+.cache/
+models/
+huggingface_cache/
+# Local credentials / temporary outputs
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log
+*.tmp
+*.bak
+# Do not automatically add local QASPER corpora or original papers
+# This repo explicitly includes only the frozen policy artifact and selected benchmark JSONL.

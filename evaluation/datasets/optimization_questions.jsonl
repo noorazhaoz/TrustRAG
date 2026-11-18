@@ -1,0 +1,5 @@
+{"question_id":"eval-q1","document_id":"paper-demo-001","question":"What is the main optimization objective proposed in this paper?"}
+{"question_id":"eval-q2","document_id":"paper-demo-001","question":"How does the proposed approach differ from FRAPPE?"}
+{"question_id":"eval-q3","document_id":"paper-demo-001","question":"Which optimization algorithms are used for classification and regression?"}
+{"question_id":"eval-q4","document_id":"paper-demo-001","question":"How does the method combine two pre-trained models?"}
+{"question_id":"eval-q5","document_id":"paper-demo-001","question":"What was the exact GPU energy consumption in joules for training the proposed model?"}

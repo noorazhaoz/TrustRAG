@@ -1,0 +1,55 @@
+{
+  "stage": "Step 71A - FINAL DEVELOPMENT FIT / FROZEN BEFORE HELDOUT",
+  "fit_timestamp_utc": "2026-10-23T14:48:34.895792+00:00",
+  "data_scope": "Step 66 development only. Heldout not accessed.",
+  "training_questions_evaluable": 599,
+  "training_papers_evaluable": 235,
+  "training_rescues": 16,
+  "training_harms": 7,
+  "policy": "net_benefit_ridge",
+  "training_target": "hybrid_hit@10 - baseline_hit@10 in {-1,0,1}",
+  "model": "SimpleImputer(median) -> StandardScaler -> Ridge(alpha=20)",
+  "features_in_order": [
+    "dense_top1_score",
+    "dense_top2_margin",
+    "dense_top5_mean",
+    "dense_rerank_top10_overlap",
+    "dense_rank_of_rerank_top1_or_11",
+    "baseline_float_fraction"
+  ],
+  "action_rule": "Hybrid iff predicted_delta_hit >= decision_threshold; else Keep",
+  "decision_threshold": 0.031045372647072564,
+  "inner_cv": {
+    "method": "GroupKFold",
+    "n_splits": 3,
+    "selection": "maximize mean trigger*(delta_hit-penalty) on inner OOF; ties prefer fewer triggers"
+  },
+  "inner_cv_estimated_utility_gain_over_keep": 0.0027378964941569264,
+  "hybrid_penalty": 0.02,
+  "random_seed_record": 2026,
+  "retrieval_methods": {
+    "baseline": "dense30_rerank",
+    "hybrid": "hybrid30_rerank"
+  },
+  "source_file_sha256": {
+    "question_metrics.csv": "c4e93be28c57bd8c9d1b736b3b22dec88a568d3dd3f5d48201a8cb9c65056c2f",
+    "predictions.csv": "cb4dcef67d49b30c9c65a027545d64f42cab85751e3ce7b79d2e731fc746df3e"
+  },
+  "model_filename": "net_benefit_ridge.joblib",
+  "model_sha256": "a1fc5650ef8ac71d6c14c16b441a1e0b351ba2396ae40e25acb9ff96c08e4f3c",
+  "requirements": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "important_cautions": [
+    "This final model uses ONLY Development labels. Do not refit after viewing heldout results.",
+    "Threshold was selected on Development inner-fold out-of-fold predictions.",
+    "Policy uses baseline-only runtime features; no gold is available at inference.",
+    "The penalty 0.02 is unitized, NOT a measured latency.",
+    "Gold evidence for float captions may be a proxy, not complete table/figure information.",
+    "Unanswerable and no-gold questions are excluded from evidence metric training.",
+    "Only load joblib artifacts that you created and trust; pickle-based deserialization can execute code."
+  ]
+}

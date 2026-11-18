@@ -1,0 +1,9 @@
+{"question_id":"eval-q6","sufficient_evidence_groups":[["page16_chunk1"],["page13_chunk2"],["page13_chunk3"]],"notes":"Each passage independently supports the key point that both pre-trained models remain fixed and only the combination mechanism is learned. Alternative evidence groups are treated as OR conditions."}
+{"question_id":"eval-q1","sufficient_evidence_groups":[["page7_chunk1"]],"notes":"Equation 6 directly states the fidelity and fairness optimization objective."}
+{"question_id":"eval-q2","sufficient_evidence_groups":[["page7_chunk3"],["page8_chunk2"]],"notes":"Either passage explains the structural difference between FRAPPE additive perturbation and the proposed weighted correction."}
+{"question_id":"eval-q3","sufficient_evidence_groups":[["page13_chunk1"]],"notes":"Explicitly identifies L-BFGS-B for classification and Powell for regression."}
+{"question_id":"eval-q4","sufficient_evidence_groups":[["page13_chunk3"]],"notes":"Equation 25 gives the two-pre-trained-model formula using f_perf and f_fair."}
+{"question_id":"eval-q7","sufficient_evidence_groups":[["page13_chunk3"]],"notes":"Equations 25 and 26 distinguish input-dependent MoE gating from constant Mixture weighting."}
+{"question_id":"eval-q8","sufficient_evidence_groups":[["page13_chunk1"]],"notes":"Explains the use of Powell's derivative-free optimization for the non-smooth regression fairness objective."}
+{"question_id":"eval-q9","sufficient_evidence_groups":[["page7_chunk1"]],"notes":"Equation 6 defines the prediction-fidelity and fairness-regularization trade-off controlled by lambda."}
+{"question_id":"eval-q10","sufficient_evidence_groups":[["page8_chunk2"]],"notes":"Explains why the correction can be nonlinear even when the simpler model is linear."}

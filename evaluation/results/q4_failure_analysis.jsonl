@@ -1,0 +1,42 @@
+{
+  "case_id": "q4-reranking-evidence-loss",
+  "question_id": "faith-q4",
+  "document_id": "paper-demo-001",
+  "failure_category": "reranking_evidence_loss",
+  "target_evidence_id": "page13_chunk3",
+  "retrieval_diagnostics": {
+    "dense_rank": 4,
+    "bm25_rank": 69,
+    "rrf_rank": 22,
+    "keep_cross_encoder_rank": 28,
+    "hybrid_cross_encoder_rank": 26,
+    "target_cross_encoder_score": -5.181406,
+    "top10_cutoff_score": 1.909607
+  },
+  "generation_comparison": {
+    "dense_raw": {
+      "formula_correct": true,
+      "generation_tokens": 186,
+      "finish_reason": "stop",
+      "evidence_oracle_used": false
+    },
+    "reranked_keep": {
+      "formula_correct": false,
+      "finish_reason": "stop",
+      "evidence_oracle_used": false
+    },
+    "oracle_augmented_keep": {
+      "formula_correct": true,
+      "generation_tokens": 176,
+      "finish_reason": "stop",
+      "evidence_oracle_used": true
+    }
+  },
+  "interpretation": "In this single-question diagnostic, cross-encoder reranking removed the formula-bearing evidence from the final context. Dense Raw and Oracle-Augmented Keep produced the correct formula, while Reranked Keep did not.",
+  "limitations": [
+    "Single question and one generation per condition.",
+    "Evidence sets and ordering differ across conditions.",
+    "Generation randomness has not been assessed.",
+    "Oracle intervention is diagnostic and not a deployable policy."
+  ]
+}

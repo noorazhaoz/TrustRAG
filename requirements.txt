@@ -1,0 +1,20 @@
+# Recorded from a working Apple Silicon / Python 3.11 environment.
+# Environment versions, not a cross-platform lockfile.
+fastapi==0.162.2
+uvicorn==0.54.0
+pydantic==2.14.3
+python-multipart==0.0.33
+pymupdf==2.0
+numpy==2.4.6
+faiss-cpu==1.15.1
+sentence-transformers==6.2.0
+rank-bm25==0.2.2
+scikit-learn==1.9.1
+scipy==1.17.1
+joblib==1.6.0
+mlx==0.32.4
+mlx-lm==0.32.2
+transformers==5.20.2
+torch==2.14.1
+pandas==3.0.6
+pytest==9.2.0

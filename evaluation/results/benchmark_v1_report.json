@@ -1,0 +1,266 @@
+{
+  "benchmark": "optimization_benchmark_v1",
+  "method": "frozen_ridge_adaptive",
+  "total_questions": 10,
+  "correctness": {
+    "pass": 6,
+    "fail": 3,
+    "uncertain": 1
+  },
+  "citation_id_validity": {
+    "valid": 10,
+    "total": 10
+  },
+  "mean_pipeline_latency_ms": 9849.216696014628,
+  "total_generation_tokens": 1755,
+  "questions": [
+    {
+      "question_id": "eval-q1",
+      "retrieval_policy": "keep",
+      "correctness": "pass",
+      "answer_sha256": "ebf534be30af6d4d521f42fde0dad0a62a89c1938d33604f41ef7101432e94c2",
+      "citation_ids_valid": true,
+      "generation_tokens": 281,
+      "finish_reason": "stop",
+      "pipeline_latency_ms": 12683.166583999991,
+      "evidence_sufficiency": {
+        "dense_raw": {
+          "reference_recall": null,
+          "evidence_sufficient": true
+        },
+        "keep": {
+          "reference_recall": null,
+          "evidence_sufficient": true
+        },
+        "hybrid": {
+          "reference_recall": null,
+          "evidence_sufficient": true
+        }
+      }
+    },
+    {
+      "question_id": "eval-q10",
+      "retrieval_policy": "keep",
+      "correctness": "fail",
+      "answer_sha256": "b028db05de8aee24389ba604a2f7967909cf9b2398c1109721e99469551739a3",
+      "citation_ids_valid": true,
+      "generation_tokens": 201,
+      "finish_reason": "stop",
+      "pipeline_latency_ms": 9482.58954193443,
+      "evidence_sufficiency": {
+        "dense_raw": {
+          "reference_recall": 1.0,
+          "evidence_sufficient": true
+        },
+        "keep": {
+          "reference_recall": 1.0,
+          "evidence_sufficient": true
+        },
+        "hybrid": {
+          "reference_recall": 1.0,
+          "evidence_sufficient": true
+        }
+      }
+    },
+    {
+      "question_id": "eval-q2",
+      "retrieval_policy": "hybrid",
+      "correctness": "fail",
+      "answer_sha256": "708bbd0e401ec1954aa1cefd79d30b31255f5946b48e786743bdfe598ce56d80",
+      "citation_ids_valid": true,
+      "generation_tokens": 380,
+      "finish_reason": "stop",
+      "pipeline_latency_ms": 13098.275041673332,
+      "evidence_sufficiency": {
+        "dense_raw": {
+          "reference_recall": null,
+          "evidence_sufficient": true
+        },
+        "keep": {
+          "reference_recall": null,
+          "evidence_sufficient": true
+        },
+        "hybrid": {
+          "reference_recall": null,
+          "evidence_sufficient": true
+        }
+      }
+    },
+    {
+      "question_id": "eval-q3",
+      "retrieval_policy": "keep",
+      "correctness": "pass",
+      "answer_sha256": "b7430c07eb01d83a11e2d04cb7c028ca77dbfbfd01dfe19adaee4f14201de88f",
+      "citation_ids_valid": true,
+      "generation_tokens": 92,
+      "finish_reason": "stop",
+      "pipeline_latency_ms": 8081.1862498521805,
+      "evidence_sufficiency": {
+        "dense_raw": {
+          "reference_recall": null,
+          "evidence_sufficient": true
+        },
+        "keep": {
+          "reference_recall": null,
+          "evidence_sufficient": true
+        },
+        "hybrid": {
+          "reference_recall": null,
+          "evidence_sufficient": true
+        }
+      }
+    },
+    {
+      "question_id": "eval-q4",
+      "retrieval_policy": "keep",
+      "correctness": "fail",
+      "answer_sha256": "51145c5879af1ddac67091a14ed87efe64b33d428d3f5c8370ac39ad3c3c9133",
+      "citation_ids_valid": true,
+      "generation_tokens": 219,
+      "finish_reason": "stop",
+      "pipeline_latency_ms": 10597.70887484774,
+      "evidence_sufficiency": {
+        "dense_raw": {
+          "reference_recall": null,
+          "evidence_sufficient": true
+        },
+        "keep": {
+          "reference_recall": null,
+          "evidence_sufficient": false
+        },
+        "hybrid": {
+          "reference_recall": null,
+          "evidence_sufficient": false
+        }
+      }
+    },
+    {
+      "question_id": "eval-q5",
+      "retrieval_policy": "hybrid",
+      "correctness": "uncertain",
+      "answer_sha256": "293fdf104498fd6bf790a4dae3b3ab94325e2e50f4415814c570ecfba97ac1d3",
+      "citation_ids_valid": true,
+      "generation_tokens": 5,
+      "finish_reason": "stop",
+      "pipeline_latency_ms": 6789.2450001090765,
+      "evidence_sufficiency": {
+        "dense_raw": {
+          "reference_recall": null,
+          "evidence_sufficient": null
+        },
+        "keep": {
+          "reference_recall": null,
+          "evidence_sufficient": null
+        },
+        "hybrid": {
+          "reference_recall": null,
+          "evidence_sufficient": null
+        }
+      }
+    },
+    {
+      "question_id": "eval-q6",
+      "retrieval_policy": "keep",
+      "correctness": "pass",
+      "answer_sha256": "b18d5053401c94b905a24628a8ab3a40c907bd8a1346356e976265f98f37b961",
+      "citation_ids_valid": true,
+      "generation_tokens": 117,
+      "finish_reason": "stop",
+      "pipeline_latency_ms": 8429.668083786964,
+      "evidence_sufficiency": {
+        "dense_raw": {
+          "reference_recall": 0.0,
+          "evidence_sufficient": true
+        },
+        "keep": {
+          "reference_recall": 0.5,
+          "evidence_sufficient": true
+        },
+        "hybrid": {
+          "reference_recall": 0.5,
+          "evidence_sufficient": true
+        }
+      }
+    },
+    {
+      "question_id": "eval-q7",
+      "retrieval_policy": "keep",
+      "correctness": "pass",
+      "answer_sha256": "6977828bfde8c1cccb037079e8061c7527f015552ac50177fa3900c337783961",
+      "citation_ids_valid": true,
+      "generation_tokens": 227,
+      "finish_reason": "stop",
+      "pipeline_latency_ms": 10707.874624989927,
+      "evidence_sufficiency": {
+        "dense_raw": {
+          "reference_recall": 1.0,
+          "evidence_sufficient": true
+        },
+        "keep": {
+          "reference_recall": 1.0,
+          "evidence_sufficient": true
+        },
+        "hybrid": {
+          "reference_recall": 1.0,
+          "evidence_sufficient": true
+        }
+      }
+    },
+    {
+      "question_id": "eval-q8",
+      "retrieval_policy": "keep",
+      "correctness": "pass",
+      "answer_sha256": "2eef001a02ca7ab9f93dfd50f76319adeb222aef67258d1e13a9017b68078ebc",
+      "citation_ids_valid": true,
+      "generation_tokens": 72,
+      "finish_reason": "stop",
+      "pipeline_latency_ms": 9088.748499751091,
+      "evidence_sufficiency": {
+        "dense_raw": {
+          "reference_recall": 1.0,
+          "evidence_sufficient": true
+        },
+        "keep": {
+          "reference_recall": 1.0,
+          "evidence_sufficient": true
+        },
+        "hybrid": {
+          "reference_recall": 1.0,
+          "evidence_sufficient": true
+        }
+      }
+    },
+    {
+      "question_id": "eval-q9",
+      "retrieval_policy": "keep",
+      "correctness": "pass",
+      "answer_sha256": "fe56d2b2e871742f11d4bfc0fb39ccc730d6502182f3233531b65eab3b57457b",
+      "citation_ids_valid": true,
+      "generation_tokens": 161,
+      "finish_reason": "stop",
+      "pipeline_latency_ms": 9533.704459201545,
+      "evidence_sufficiency": {
+        "dense_raw": {
+          "reference_recall": 1.0,
+          "evidence_sufficient": true
+        },
+        "keep": {
+          "reference_recall": 1.0,
+          "evidence_sufficient": true
+        },
+        "hybrid": {
+          "reference_recall": 1.0,
+          "evidence_sufficient": true
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Single PDF and ten selected questions.",
+    "Correctness is human-reviewed, not an automatic metric.",
+    "Citation ID validity does not imply factual faithfulness.",
+    "Evidence sufficiency uses selected human-reviewed evidence groups.",
+    "The likely-unanswerable question remains provisionally labeled.",
+    "Comparative generation results for fixed retrieval baselines are not yet available."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "question": "How does the method combine two pre-trained models?",
+  "document_id": "paper-demo-001",
+  "target_id": "page13_chunk3",
+  "keep": {
+    "evidence_ids": [
+      "page3_chunk4",
+      "page16_chunk1",
+      "page3_chunk3",
+      "page13_chunk2",
+      "page6_chunk3",
+      "page27_chunk3",
+      "page7_chunk3",
+      "page6_chunk2",
+      "page6_chunk1",
+      "page3_chunk5"
+    ],
+    "target_retrieved": false,
+    "target_rank": null,
+    "reranking_path_latency_ms": 524.2033340036869
+  },
+  "hybrid": {
+    "evidence_ids": [
+      "page3_chunk4",
+      "page16_chunk1",
+      "page3_chunk3",
+      "page13_chunk2",
+      "page6_chunk3",
+      "page27_chunk3",
+      "page7_chunk3",
+      "page6_chunk2",
+      "page6_chunk1",
+      "page3_chunk5"
+    ],
+    "target_retrieved": false,
+    "target_rank": null,
+    "reranking_path_latency_ms": 204.16370825842023
+  }
+}
